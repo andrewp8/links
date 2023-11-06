@@ -4,8 +4,156 @@
     <title>Link in bio</title>
     <meta charset="utf-8"/>
     <meta name="author" content="Andrew Pham"/>
+    <!-- where we tell the browser how to process the document: -->
+    <!-- what title to put in the browser tab -->
+    <!-- what style sheets to load -->
+    <!-- what language to use -->
+    <!-- we will always use a character set called UTF-8 -->
+    <!-- UTF-8 allows for all languages as well as things like emoji -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!-- Connect Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    
+    <style>
+      * {
+        /* border: thin red solid; */
+        font-family: 'Pompiere', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+      }
+      body{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: #fef6e4;
+      }
+      .css-selector {
+          background: linear-gradient(270deg, #e7fe57, #9a57fe);
+          background-size: 400% 400%;
+
+          -webkit-animation: AnimationName 30s ease infinite;
+          -moz-animation: AnimationName 30s ease infinite;
+          animation: AnimationName 30s ease infinite;
+      }
+
+      @-webkit-keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+      @-moz-keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+      @keyframes AnimationName {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+      .items{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+        padding: 50px;
+        border-radius: 15px;
+      }
+      .name{
+        color:#001858;
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: larger;
+      }
+      .banner{
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons{
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-icons a {
+        color: #001858;
+        text-decoration: none;
+      }
+      .awIcons{
+        font-size: x-large;
+      }
+      .link {
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        border-radius: 50px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .link a:hover{
+        font-size: large;
+        font-weight: bold;
+        animation: textZoom 5s infinite;
+      }
+      @keyframes textZoom {
+        40% {font-size: 40px;}
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit:cover;
+        border-radius: 128px;
+        /* border-radius: 50%; */
+        /* 50% radius  == img's size will make the img circular */
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+    </style>
   </head>
+  
   <body>
-    <p>My link in bio</p>
+    <div class="items css-selector">
+      <div class="banner">
+        <img src="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile avatar -  a black French bulldog wearing round glasses" class="banner-image"/>
+      </div>
+      <div class="name">
+        <p>Andrew Pham</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/andrew-pham-seva9/" target="_blank"><i class="fa-brands fa-linkedin awIcons"></i></a>
+        <a href="https://www.linkedin.com/in/andrew-pham-seva9/" target="_blank">Test1</a>
+        <a href="https://www.linkedin.com/in/andrew-pham-seva9/" target="_blank">Test2</a>
+        <a href="https://www.linkedin.com/in/andrew-pham-seva9/" target="_blank">Test3</a>
+      </div>
+      <div class="link">
+        <img src="https://images.unsplash.com/photo-1695747003275-0a0ac0b0645a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="thumbnail"/>
+        <a href="https://youtu.be/AZals4U6Z_I?si=uyIvygIv0rpJS15R" target="_blank">Favorite relaxing music</a>
+      </div>
+      <div class="link">
+        <img src="https://images.unsplash.com/photo-1598153346810-860daa814c4b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="thumbnail"/>
+        <a href="https://youtu.be/z4K2F_OALPQ?si=1n4T4zwleVP8g92E" target="_blank">Favorite relaxing movies</a>
+      </div>
+      <div class="link">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png" class="thumbnail"/>
+        <a href="https://ghibli-park.jp/en/" target="_blank">Place want to go</a>
+      </div>
+
+    </div>
   </body>  
 </html>
