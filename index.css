@@ -1,0 +1,237 @@
+* {
+  /* border: thin red solid; */
+  font-family: 'Pompiere', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 1.5vh;
+  margin: auto;
+  padding: 10px;
+}
+
+body {
+  /* padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #000; */
+  background-color: #000;
+  display: flex column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* .css-selector {
+    background: linear-gradient(270deg, #e7fe57, #9a57fe);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} */
+
+.banner-image {
+  width: 12vh;
+  height: 12vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
+.items {
+  /* display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+  padding: 50px;
+  border-radius: 15px; */
+}
+
+.profile {
+  display: grid;
+  gap: 10%;
+  place-items: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#name {
+  font-weight: bolder;
+  font-size: 2vh;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.awIcons {
+  font-size: 2.5vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.awIcons:active {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.link {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+}
+
+.link_background {
+  background-image: url('images/links_background.jpg');
+}
+
+.link a {
+  color: #001e1d;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.link a:hover {
+  font-size: large;
+  font-weight: bold;
+  animation: textZoom 5s infinite;
+}
+
+@keyframes textZoom {
+  40% {
+    font-size: 40px;
+  }
+}
+
+
+/* .container {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "places places places places"
+    "film film book1 book2"
+    "quote quote quote quote";
+} 
+
+.places {
+  grid-area: places;
+  background-color: red;
+width: 100%;
+height: 33%
+}
+
+.film {
+  grid-area: film;
+  background-color: blue;
+  grid-column: span 2;
+  height: 34%;
+}
+
+.book1 {
+  grid-area: book1;
+  background-color: yellow;
+  grid-column: span 1; 
+  width: 25%;
+  height: 34%;
+}
+
+.book2 {
+  grid-area: book2;
+  background-color: green;
+  grid-column: span 1; 
+  width: 25%;
+  height: 34%;
+}
+
+.quote {
+  grid-area: quote;
+  background-color: purple;
+  grid-column: span 4; 
+  width: 100%;
+  height: 33% ;
+} */
+
+/* ------------ */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 500px;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px; /*You can remove this gap if you don't want space between them.*/
+}
+
+.one {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  background-color: red;
+  z-index: 2;
+}
+
+.two {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  background-color: blue;
+}
+
+.three {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 3;
+  background-color: green;
+}
+
+.four {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  background-color: yellow;
+}
+
+.five {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  background-color: purple;
+}
+
+.six {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  background-color: grey;
+}

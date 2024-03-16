@@ -1,0 +1,91 @@
+body {
+  /* border: thin red solid; */
+
+  
+  color: black;
+  font-size: 1.5vh;
+  padding: 10px;
+  text-align: center;
+}
+.banner{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.banner-image {
+  width: 12vh;
+  height: 12vh;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 5px 0 20px 2px rgba(0,0,0,0.35);
+  margin-top: 4vh;
+}
+
+.profile{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.awIcons {
+  font-size: 2.5vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.awIcons:active {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 500px;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+
+.one {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  background-color: red;
+  z-index: 2;
+}
+
+.two {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  background-color: blue;
+}
+
+.three {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 3;
+  background-color: green;
+}
+
+.four {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  background-color: yellow;
+}
+
+.five {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  background-color: purple;
+}
+
+.six {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  background-color: grey;
+}
